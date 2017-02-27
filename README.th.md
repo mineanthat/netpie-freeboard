@@ -3,7 +3,7 @@ netpie-freeboard
 
 Freeboard ที่มาพร้อม NETPIE datasource and widget plugins
 
-![netpie-freeboard-screenshot](https://cloud.githubusercontent.com/assets/7685964/19427706/de8aab54-946f-11e6-81ae-bbe8b78910e5.jpg)
+![netpie-freeboard-screenshot](https://lh6.googleusercontent.com/F-kQRuaLNUjUkZ_Ktc5nSrcxW43ld1_GwXAuf94CaTXt0tOOfpTplQeCk2lYPZtrNcuFypcTnsaCYrc=w1920-h950-rw)
 
 
 วิธีติดตั้ง
@@ -17,10 +17,10 @@ git clone https://github.com/netpieio/netpie-freeboard
 - **KEY** - Key ของ microgear
 - **SECRET - Secret** ของ key ข้างต้น
 - **SUBSCRIBE TOPICS** - เป็น topic ที่จะให้ datasource นี้ subscribe หากมีหลาย topic ให้ใช้ comma คั่น สามารถใช้ wildcard # และ + ได้ ค่าปกติจะเป็น /# คือ subscribe ทุก topic ของ App ID นี้
+- **ONCONNECTED ACTION** - เป็นการกำหนดการกระทำเริ่มต้นเมื่อ Freeboard เริ่มต้นทำงาน
 
-![netpie-freeboard2](https://cloud.githubusercontent.com/assets/7685964/15654634/fbe3c096-26bf-11e6-8ab5-4656839b53ad.jpg)
+![netpie-freeboard2](https://lh5.googleusercontent.com/vKpwQgVmUadXc65kJkPtSweA0_Xc_rH5_93ge2vjoMNQZiljDIoK4Lt41_3RXGHROlHoPi2twlC7H50=w1920-h950-rw)
 
-ในส่วนของ button widget เราสามารถปรับแต่งให้ปุ่ม มีการรันโค้ด Javascript เมื่อเกิดการกดได้ ตามตัวอย่างในรูป ปุ่มจะถูกกำหนดให้ส่ง chat message ไปยัง thing ที่ชื่อ pieslampher ทุกครั้งที่ถูกกด 
-โดยที่ index 'mg1' คือ microgear reference ของ datasource netpie1 ที่เราได้กำหนดไว้ตอนสร้าง datasource
 
-![netpie-freeboard3](https://cloud.githubusercontent.com/assets/7685964/15655823/ec23a1f2-26ca-11e6-9968-ee500136b7bc.jpg)
+จุดประสงค์หลักของการใช้งาน Freeboard **เพื่อสะดวกในการสร้างหน้าตาควบคุมหรือแสดงผลอย่างเรียบง่าย**
+ซึ่งตัว Freeboard นี้เป็นเว็บไซต์ที่ประกอบไปด้วยเครื่องมืออำนวยความสะดวก ซึ่งในที่นี้ก็คือ **Widget**
