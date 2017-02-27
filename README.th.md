@@ -88,6 +88,7 @@ git clone https://github.com/netpieio/netpie-freeboard
 ![netpie-freeboard8](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/buttonWidget3.PNG)
 
 >> microgear["GameBlackJack"].publish("/startgame","start")
+>>
 
 ![netpie-freeboard9](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/buttonWidgetShow.PNG)
 
