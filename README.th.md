@@ -3,7 +3,7 @@ netpie-freeboard
 
 Freeboard ที่มาพร้อม NETPIE datasource and widget plugins
 
-![netpie-freeboard-screenshot](https://lh6.googleusercontent.com/F-kQRuaLNUjUkZ_Ktc5nSrcxW43ld1_GwXAuf94CaTXt0tOOfpTplQeCk2lYPZtrNcuFypcTnsaCYrc=w1920-h950-rw)
+![netpie-freeboard-screenshot](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/overview.PNG)
 
 
 วิธีติดตั้ง
@@ -19,7 +19,7 @@ git clone https://github.com/netpieio/netpie-freeboard
 - **SUBSCRIBE TOPICS** - เป็น topic ที่จะให้ datasource นี้ subscribe หากมีหลาย topic ให้ใช้ comma คั่น สามารถใช้ wildcard # และ + ได้ ค่าปกติจะเป็น /# คือ subscribe ทุก topic ของ App ID นี้
 - **ONCONNECTED ACTION** - เป็นการกำหนดการกระทำเริ่มต้นเมื่อ Freeboard เริ่มต้นทำงาน
 
-![netpie-freeboard2](https://lh5.googleusercontent.com/vKpwQgVmUadXc65kJkPtSweA0_Xc_rH5_93ge2vjoMNQZiljDIoK4Lt41_3RXGHROlHoPi2twlC7H50=w1920-h950-rw)
+![netpie-freeboard2](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/addDatasource.PNG)
 
 
 จุดประสงค์หลักของการใช้งาน Freeboard **เพื่อสะดวกในการสร้างหน้าตาควบคุมหรือแสดงผลอย่างเรียบง่าย**
