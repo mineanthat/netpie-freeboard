@@ -27,22 +27,67 @@ git clone https://github.com/netpieio/netpie-freeboard
 
 ![netpie-freeboard3](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/showWidget.png)
 
-โดยพื้นฐานของการใช้งาน **Widget** ใน Freeboard นั้นก็คือ Javascript
-ตัวอย่างการใช้งาน
-- **Text**
+โดยพื้นฐานของการใช้งาน **Widget** ใน Freeboard นั่นก็คือ Javascript
+ตัวอย่างการใช้งาน จะมีอยู่ 2 อย่างก็คือการแสดงค่าและการส่งค่า
+
+การแสดงค่านั้นเราจะนำค่าออกมาแสดงโดยการใช้
+>> datasources["ชื่อของ Datasource"]["ที่อยู่ของข้อมูลที่เราต้องการ (topic หรือ alias) "]
+
+ข้างต้นนี้เป็นข้อมูลหนึ่งตัว นั่นคือเราสามารถนำไปประยุกต์ได้ดังนี้
+- **Text** เป็นการแสดงค่ามาในรูปแบบของข้อความ
 
 ![netpie-freeboard4](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/textWidget.PNG)
+
+>> datasources["GameBlackJack"]["/GameBlackJack/player1/point"]
+
+ชื่อ Datasource คือ GameBlackJack
+และข้อความที่แสดงมาจาก Topic player1/point
+
 ![netpie-freeboard5](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/textWidgetShow.PNG)
 
-- **Gauge**
+- **Gauge** เป็นการแสดงค่าออกมาในรูปแบบของเกจ
 
 ![netpie-freeboard10](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/gaugeWidget.PNG)
+
+>> datasources["GameBlackJack"]["/GameBlackJack/player1/lifepoint"]
+
+ชื่อ Datasource คือ GameBlackJack
+และข้อความที่แสดงมาจาก Topic player1/lifepoint
+
 ![netpie-freeboard11](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/gaugeWidgetShow.PNG)
 
-- **Button**
+- **Indicator Light** 
+
+![netpie-freeboard12](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/indicatorLightWidget.PNG)
+
+>> datasources["GameBlackJack"]["/GameBlackJack/startgame"] == "start"
+
+เป็นการนำข้อมูลที่ได้มาประยุกต์ใช้ โดยหากข้อมูลที่ได้คือ start จะทำให้ไฟติด
+
+![netpie-freeboard13](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/indicatorLightWidgetshow.PNG)
+
+- **Button** เป็นปุ่มกดเพื่อนำส่งค่าออกไป
+
+รูปแบบการส่งจะมีอยู่ 2 รูปแบบคือ chat และ publish 
+โดย chat จะส่งตรงไปที่ alias และ publish จะส่งผ่านทาง topic
+
+**การส่งแบบ chat**
+>> Microgear["ชื่อของ Datasource"].chat("ชื่อ alias", ข้อความที่ต้องการส่ง)
+
+**การส่งแบบ publish**
+>> Microgear["ชื่อของ Datasource].publish("topic", ข้อความที่ต้องการส่ง)
 
 ![netpie-freeboard6](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/buttonWidget.PNG)
+
+>> Microgear["GameBlackJack"].publish("/player1/status","hit")
+
 ![netpie-freeboard7](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/buttonWidget2.PNG)
+
+>> Microgear["GameBlackJack"].publish("/player1/status","stand")
+
 ![netpie-freeboard8](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/buttonWidget3.PNG)
+
+>> microgear["GameBlackJack"].publish("/startgame","start")
+
 ![netpie-freeboard9](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/buttonWidgetShow.PNG)
 
