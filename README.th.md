@@ -23,4 +23,26 @@ git clone https://github.com/netpieio/netpie-freeboard
 
 
 จุดประสงค์หลักของการใช้งาน Freeboard **เพื่อสะดวกในการสร้างหน้าตาควบคุมหรือแสดงผลอย่างเรียบง่าย**
-ซึ่งตัว Freeboard นี้เป็นเว็บไซต์ที่ประกอบไปด้วยเครื่องมืออำนวยความสะดวก ซึ่งในที่นี้ก็คือ **Widget**
+ซึ่งตัว Freeboard นี้เป็นเว็บไซต์ที่ประกอบไปด้วยเครื่องมืออำนวยความสะดวก นั่นก็คือ **Widget**
+
+![netpie-freeboard3](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/showWidget.png)
+
+โดยพื้นฐานของการใช้งาน **Widget** ใน Freeboard นั้นก็คือ Javascript
+ตัวอย่างการใช้งาน
+- **Text**
+
+![netpie-freeboard4](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/textWidget.PNG)
+![netpie-freeboard5](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/textWidgetShow.PNG)
+
+- **Gauge**
+
+![netpie-freeboard10](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/gaugeWidget.PNG)
+![netpie-freeboard11](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/gaugeWidgetShow.PNG)
+
+- **Button**
+
+![netpie-freeboard6](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/buttonWidget.PNG)
+![netpie-freeboard7](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/buttonWidget2.PNG)
+![netpie-freeboard8](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/buttonWidget3.PNG)
+![netpie-freeboard9](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/buttonWidgetShow.PNG)
+
