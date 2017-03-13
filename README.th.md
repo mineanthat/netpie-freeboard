@@ -72,18 +72,18 @@ git clone https://github.com/netpieio/netpie-freeboard
 โดย chat จะส่งตรงไปที่ alias และ publish จะส่งผ่านทาง topic
 
 **การส่งแบบ chat**
->> Microgear["ชื่อของ Datasource"].chat("ชื่อ alias", ข้อความที่ต้องการส่ง)
+>> microgear["ชื่อของ Datasource"].chat("ชื่อ alias", ข้อความที่ต้องการส่ง)
 
 **การส่งแบบ publish**
->> Microgear["ชื่อของ Datasource].publish("topic", ข้อความที่ต้องการส่ง)
+>> microgear["ชื่อของ Datasource].publish("topic", ข้อความที่ต้องการส่ง)
 
 ![netpie-freeboard6](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/buttonWidget.PNG)
 
->> Microgear["GameBlackJack"].publish("/player1/status","hit")
+>> microgear["GameBlackJack"].publish("/player1/status","hit")
 
 ![netpie-freeboard7](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/buttonWidget2.PNG)
 
->> Microgear["GameBlackJack"].publish("/player1/status","stand")
+>> microgear["GameBlackJack"].publish("/player1/status","stand")
 
 ![netpie-freeboard8](https://raw.githubusercontent.com/mineanthat/netpie-freeboard/master/docs/public/images/buttonWidget3.PNG)
 
